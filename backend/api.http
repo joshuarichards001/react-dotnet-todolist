@@ -1,0 +1,38 @@
+# Gets list of todos
+GET https://localhost:5001/api/TodoItems/
+Content-Type: application/json
+
+###
+
+# Gets individual todo
+GET https://localhost:5001/api/TodoItems/1/
+Content-Type: application/json
+
+###
+
+# Creates new todo
+POST https://localhost:5001/api/TodoItems/
+Content-Type: application/json
+
+{
+  "name":"do dishes",
+  "isComplete":false
+}
+
+###
+
+# Deletes todo
+DELETE https://localhost:5001/api/TodoItems/2/
+Content-Type: application/json
+
+###
+
+# Edits a todo
+PUT https://localhost:5001/api/TodoItems/1/
+Content-Type: application/json
+
+{
+  "id":1,
+  "name":"feed the fish",
+  "isComplete":true
+}
